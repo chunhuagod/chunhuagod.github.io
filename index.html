@@ -1,23 +1,345 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hello" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/hello/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T07:08:59.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/hello/">hello</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>hello world!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/hello/" data-id="cktclbs1v00004dtt72fc5kn4" data-title="hello" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T06:42:32.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/hello-world/">hello world</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Hello World!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/hello-world/" data-id="cktcl7ugo00000utt9ly51gtq" data-title="hello world" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-MySQL实战学习-01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/MySQL%E5%AE%9E%E6%88%98%E5%AD%A6%E4%B9%A0-01/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T03:51:45.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/MySQL%E5%AE%9E%E6%88%98%E5%AD%A6%E4%B9%A0-01/">MySQL实战学习-01</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="SQL查询语句如何执行"><a href="#SQL查询语句如何执行" class="headerlink" title="SQL查询语句如何执行"></a>SQL查询语句如何执行</h3><p>想要弄清楚这个问题，首先需要知道MySQL的基础架构，从中可以了解到SQL语句在MySQL中各个模块的作用，下面是MySQL的基础架构示意图</p>
+<p><img src="../pic/0d2070e8f84c4801adbfa03bda1f98d9-16309967501721.png" alt="MySQL基础架构"></p>
+<p>总得来说，分为两层：1）Server层：包含查询缓存、分析器、优化器、执行器等，以及所有的内置函数，所有的跨存储引擎的功能，比如存储过程、视图、触发器等，2）存储引擎负责数据的存储和提取，支持innoDB、MyISAM、Memory等多个存储引擎。</p>
+<h5 id="连接器"><a href="#连接器" class="headerlink" title="连接器"></a>连接器</h5><p>负责与客户端建立连接、获取权限、维持和管理连接。用户连接建立完成后，即使期间权限做出了修改，也不会修改已经存在连接的权限，只有在重新连接后才会生效。</p>
+<p>可以通过show processlist查看连接的状态。timeout参数可以控制客户端长时间没动静后断开连接。</p>
+<p>长连接是指客户端持续有请求，则使用同一个连接，短连接是指执行几次查询后就断开连接，下次查询再建立一个。建立连接的过程比较复杂，开销较大，通常建议使用长连接。但是使用长连接会造成MySQL占用内存过大。</p>
+<h5 id="查询缓存"><a href="#查询缓存" class="headerlink" title="查询缓存"></a>查询缓存</h5><p>查询请求会首先查看查询缓存中是否之前执行过这个语句，执行过的语句可能会以key-value形式缓存在内存中，如果在缓存中可以找到，那就可以直接返回给客户端。如果执行语句不在查询缓存中，就执行后续阶段，执行结果存入查询缓存中。</p>
+<p>多数情况下，不建议使用查询缓存，因为只要有对表的更新，这个表上的查询缓存都会被清空。对于更新频繁的数据库，查询缓存的命中率很低。MySQL8.0已经删除了查询缓存功能。</p>
+<h5 id="分析器"><a href="#分析器" class="headerlink" title="分析器"></a>分析器</h5><p>需要知道想要做什么，对SQL语句进行解析。判断是否满足SQL语法。</p>
+<h5 id="优化器"><a href="#优化器" class="headerlink" title="优化器"></a>优化器</h5><p>多个索引时决定索引选择和有多表关联时，决定各个表的连接顺序。优化器阶段完成后，这个语句的执行方案得到确定。</p>
+<h5 id="执行器"><a href="#执行器" class="headerlink" title="执行器"></a>执行器</h5><p>执行语句</p>
+<ol>
+<li>权限检查，是否有查询权限</li>
+<li>根据表引擎的定义，使用这个引擎提供的接口，执行语句</li>
+</ol>
+<h3 id="SQL更新语句如何执行"><a href="#SQL更新语句如何执行" class="headerlink" title="SQL更新语句如何执行"></a>SQL更新语句如何执行</h3><p>幕后英雄：redo log和binlog</p>
+<p>WAL技术：Write-Ahead logging，先写日志再写磁盘</p>
+<p>具体来说：当有一条记录需要更新时候，innoDB引擎写把记录写入redolog，并更新内存（update完成），innoDB引擎在合适时候将这个操作记录更新至磁盘。如果redolog写满了，需要将其中部分数据更新至磁盘中，然后删除redolog中的记录，腾出空间。redo log是innoDB引擎独有的。具有crash-safe功能。</p>
+<p>Binlog是Server层日志，与redo log区别在于：</p>
+<ol>
+<li>层不一样：redo log为innoDB引擎特有，binlog是MySQL的server层实现的，所有引擎都可以使用。</li>
+<li>记录的内容不一样：redo log是物理日志，记录了某个数据页做了什么修改；binlog是逻辑日志，记录的是语句的逻辑</li>
+<li>redolog是循环写得，空间固定，binlog追加写入（写到一定大小后换到另一个日志），不会覆盖以前的日志。</li>
+</ol>
+<p>简单的update语句的内部执行流程：</p>
+<p><img src="../pic/2e5bff4910ec189fe1ee6e2ecc7b4bbe.png" alt="img"></p>
+<ol>
+<li>执行器调用引擎接口获取ID=2的行，从磁盘读入内存，然后返回。</li>
+<li>执行器对该行数据进行操作，更新行数据，调用引擎接口写入这行新数据</li>
+<li>写入新行，新行更新到内存，将更新操作记录到redo log中，此时redo log处于prepare阶段，然后通知执行器完成</li>
+<li>执行器生成binlog，写入磁盘</li>
+<li>执行器调用引擎提交事务接口，引擎将刚刚写入的redo log更改为commit状态</li>
+</ol>
+<h5 id="redo-log与binlog两阶段提交"><a href="#redo-log与binlog两阶段提交" class="headerlink" title="redo log与binlog两阶段提交"></a>redo log与binlog两阶段提交</h5><p>如何恢复数据库：找到最近的一次备份，恢复到临时库，然后从备份的时间点开始，基于binlog依次取出命令进行数据库恢复</p>
+<ol>
+<li>先写redo log后写binlog，加入写完redo log后发生了crash，binlog未写入，则相当于少了一次更新</li>
+<li>先写binlog后写redo log，如果binlog写入后，发生了crash，相当于多了一次更新</li>
+</ol>
+<h3 id="binlog、redo-log和undo-log"><a href="#binlog、redo-log和undo-log" class="headerlink" title="binlog、redo log和undo log"></a>binlog、redo log和undo log</h3><p>逻辑日志：记录sql逻辑</p>
+<p>物理日志：记录数据页变更</p>
+<h4 id="binlog：逻辑日志"><a href="#binlog：逻辑日志" class="headerlink" title="binlog：逻辑日志"></a>binlog：逻辑日志</h4><p>记录数据库执行的写入性操作（不包含查询信息），以二进制形式保存在磁盘中。追加写入，通过max_binlog_size设置每个binlog文件的大小。</p>
+<h5 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h5><ol>
+<li>主从复制：Master端开启binlog，然后将binlog发送给各个slave，slave重放binlog，实现主从数据一致</li>
+<li>数据恢复</li>
+</ol>
+<h5 id="更新至磁盘时机"><a href="#更新至磁盘时机" class="headerlink" title="更新至磁盘时机"></a>更新至磁盘时机</h5><p>对于innoDB引擎，只有事务提交时才会记录binlog，此时记录还在内存中，binlog刷到磁盘的时机通过sync_binlog控制</p>
+<ol>
+<li>0：不强制要求，由系统判定</li>
+<li>n：每n个事务刷一次</li>
+</ol>
+<h5 id="日志格式"><a href="#日志格式" class="headerlink" title="日志格式"></a>日志格式</h5><p>MySQL以前默认格式为statement，目前为ROW</p>
+<ol>
+<li>statement格式：每条修改数据的sql语句记录。缺点：不需要记录每一行的变化，减少binlog的日志量，节约io，提升性能。</li>
+<li>不记录sql上下文信息，记录哪条数据被修改了。</li>
+</ol>
+<h4 id="Redo-log：物理日志"><a href="#Redo-log：物理日志" class="headerlink" title="Redo log：物理日志"></a>Redo log：物理日志</h4><p>持久性：事务只要提交成功，对于数据库提交的修改就永久保存了下来。</p>
+<p>如何实现这种呢，最直观的方法就是事务每次提交的时候，将事务涉及到的修改都刷新到磁盘。但是这样造成很大的性能问题：</p>
+<ol>
+<li>innoDB以页为单位进行磁盘交互，一个事务可能只修改了一个数据页中的几个字节，刷完整的页到磁盘，太浪费资源</li>
+<li>一个事务可能设计多个数据页，这些数据也在物理并不连续，io性能太差</li>
+</ol>
+<p>因此mysql设计了redo log，具体来说只是记录事务对数据页做了哪些修改，这样可以解决性能问题，因为写入的文件更小了，并且redo log存储是顺序io，物理连续</p>
+<h5 id="redo-log"><a href="#redo-log" class="headerlink" title="redo log"></a>redo log</h5><p>包含两个部分：1）redo log buffer，2）redo log file</p>
+<p><img src="../pic/v2-992558d6b12a8d0f666603da548758b7_b.jpg" alt="v2-992558d6b12a8d0f666603da548758b7_b"></p>
+<p>mysql每执行DML命令，先将记录写入redo log buffer，后续某个时间点在一次性将多个操作记录写入redo log file（这个具体取决于innodb_flush_log_at_trx_commit的设定）。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/MySQL%E5%AE%9E%E6%88%98%E5%AD%A6%E4%B9%A0-01/" data-id="cktcl7ugt00010utt3ngp07km" data-title="MySQL实战学习-01" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/09/09/hello/">hello</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/09/hello-world/">hello world</a>
+          </li>
+        
+          <li>
+            <a href="/2021/09/09/MySQL%E5%AE%9E%E6%88%98%E5%AD%A6%E4%B9%A0-01/">MySQL实战学习-01</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
